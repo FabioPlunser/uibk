@@ -1,7 +1,8 @@
-.fdb*
-.fls
-.lof
-.log
-.lot
-.synctex.gz
-.toc
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.synctex.gz
+*.toc
+*.aux
