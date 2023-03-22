@@ -1,0 +1,59 @@
+\newpage
+
+\section{Hallo}
+\begin{Lemma}{Testing}{}
+	Hallo
+\end{Lemma}
+
+\begin{Definition}{Konjunktive und Disjunktive Normalform}{}
+	Hallo
+\end{Definition}
+
+\begin{Codebox}[Hallo]{C}
+	printf("Hallo World");
+\end{Codebox}
+
+\begin{Codebox}[Hallo]{Python}
+	print("Hallo World");
+\end{Codebox}
+
+% \begin{figure}[!htb]
+%   \centering
+%   \includegraphics[width=\linewidth]{./Test.png}
+%   \caption{Test}
+%   \label{caption:Test}
+% \end{figure}
+
+
+\begin{Theorem}{Theorem}{}
+	proof rules MT, ¬¬i, PBC and LEM are derivable from other (basic) proof rules
+\end{Theorem}
+
+\begin{Proof}{Proof}{}
+	\begin{logicproof}{2}
+    p \rightarrow q & premise \\
+    \begin{subproof}
+      r \rightarrow p & assumption \\
+      \begin{subproof}
+        r & assumption \\
+        p & $\rightarrow$ e: 2,3 \\
+        q & $\rightarrow$ e: 1, 4
+      \end{subproof}
+        r \rightarrow q & $\rightarrow i: 4,5$
+    \end{subproof}
+    (r \rightarrow p) \rightarrow (r \rightarrow q) & \, $\rightarrow i$ 3--5
+  \end{logicproof}
+\end{Proof}
+
+
+\begin{Example}{}{}
+  formula$ ((p \imply q) \imply p) \imply p$ is valid
+\end{Example}
+
+\begin{Proof}{Proof}{}
+  \begin{karnaugh-map}[4][2][1][q\textsubscript{1}][X][q\textsubscript{0}]
+    \manualterms{0,0,0,0,1,D,0,D}
+    % \implicant{1}{5}
+    \implicant{4}{4}
+  \end{karnaugh-map}
+\end{Proof}
